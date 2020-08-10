@@ -16,12 +16,17 @@
 <style>
   main {
     text-align: center;
-    padding: 4em;
+    padding: 3em;
     margin: 0 auto;
     max-width: none;
   }
   .container {
-    margin: 3em;
+    margin: 2em;
+  }
+  @media screen and (max-width: 640px) {
+    main {
+      padding: 1em;
+    }
   }
 </style>
 

@@ -7,6 +7,8 @@
   import Login from "./Login.svelte";
 
   import Tabs from "../shared/Tabs.svelte";
+  import Card from "../shared/Card.svelte";
+
   import Isolated from "../shared/Isolated.svelte";
 
   // tabs
@@ -24,11 +26,14 @@
     <BoothInfo />
   </Isolated>
   <Tabs {items} {activeItem} on:tabChange={tabChangeHandler} />
-  {#if activeItem === '결제'}
-    <PaymentForm />
-  {:else if activeItem === '결제 내역 확인'}
-    <PayHistoryList />
-  {/if}
+
+  <Card>
+    {#if activeItem === '결제'}
+      <PaymentForm />
+    {:else if activeItem === '결제 내역 확인'}
+      <PayHistoryList />
+    {/if}
+  </Card>
 {:else}
   <Login />
 {/if}
