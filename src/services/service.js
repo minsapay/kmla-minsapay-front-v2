@@ -1,7 +1,7 @@
 import { boothStore } from '../stores/data';
 import { studentStore } from '../stores/data';
 
-const BACKEND_URL = 'http://api.minsapay.ml:443';
+const BACKEND_URL = 'https://api.minsapay.ml';
 
 export const getBoothData = (id, password) => {
   // fetch the booth information from database
