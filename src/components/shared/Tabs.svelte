@@ -31,6 +31,17 @@
   .active {
     color: #ff4000;
   }
+  @media screen and (max-width: 640px) {
+    /*
+    화면 크기가 줄어들면 가로 방향의 메뉴바를 세로로 변경한다.
+    */
+    ul {
+      flex-direction: column;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  }
 </style>
 
 <div class="tabs noselect">

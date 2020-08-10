@@ -17,17 +17,11 @@
   main {
     text-align: center;
     padding: 4em;
-    max-width: 240px;
     margin: 0 auto;
+    max-width: none;
   }
   .container {
     margin: 3em;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
   }
 </style>
 

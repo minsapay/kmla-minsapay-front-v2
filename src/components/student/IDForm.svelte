@@ -12,18 +12,31 @@
 </script>
 
 <style>
-  .id-form {
-    margin-bottom: 1em;
+  form {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  input {
+    width: 100%;
+  }
+  .form-field {
+    margin: 16px auto;
   }
 </style>
 
 <div class="id-form">
+
   <form on:submit|preventDefault={submitHandler}>
-    <input
-      type="text"
-      placeholder="학번"
-      on:enter={submitHandler}
-      bind:value={id} />
+    <div class="form-field">
+      <input
+        type="text"
+        placeholder="학번"
+        id="id"
+        on:enter={submitHandler}
+        bind:value={id} />
+    </div>
+
     <Button>조회하기</Button>
   </form>
 </div>
