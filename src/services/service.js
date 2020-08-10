@@ -46,8 +46,8 @@ export const recordPayment = (payment) => {
         boothStore.update((booth) => {
           console.log(booth);
           let current = { ...booth };
-          current.income += res.updatedIncome;
-          current.history.push(res.updatedHistory);
+          current.income = res.updatedIncome;
+          current.history = res.updatedHistory;
           console.log(current);
           return current;
         });
