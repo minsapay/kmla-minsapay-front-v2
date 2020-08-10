@@ -36,7 +36,7 @@
         on:enter={submitHandler}
         bind:value={id} />
     </div>
-
     <Button>조회하기</Button>
   </form>
+
 </div>

@@ -52,7 +52,7 @@
 
 <style>
   form {
-    width: 400px;
+    width: 320px;
     margin: 0 auto;
     text-align: center;
   }

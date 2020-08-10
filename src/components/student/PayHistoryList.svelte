@@ -15,6 +15,12 @@
     padding: 16px;
     border-bottom: 1px solid lightgray;
   }
+  @media screen and (max-width: 640px) {
+    th,
+    td {
+      font-size: 16px;
+    }
+  }
 </style>
 
 <Card>
