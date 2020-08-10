@@ -18,11 +18,9 @@ export const getBoothData = (id, password) => {
       }
     })
     .then((booth) => {
-      console.log(booth);
       boothStore.set(booth);
     })
     .catch((err) => {
-      console.log(err);
       return null;
     });
 };
@@ -44,7 +42,6 @@ export const recordPayment = (payment) => {
     .then((res) => {
       if (res) {
         boothStore.update((booth) => {
-          console.log(booth);
           let current = { ...booth };
           current.income = res.updatedIncome;
           current.history = res.updatedHistory;
@@ -53,7 +50,6 @@ export const recordPayment = (payment) => {
       }
     })
     .catch((err) => {
-      console.log(err);
       return null;
     });
 };
@@ -68,11 +64,9 @@ export const storeStudentData = (id) => {
       }
     })
     .then((student) => {
-      console.log(student);
       studentStore.set(student);
     })
     .catch((err) => {
-      console.log(err);
       studentStore.set(null);
     });
 };

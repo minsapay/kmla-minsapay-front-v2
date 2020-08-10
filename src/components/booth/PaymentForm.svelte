@@ -41,7 +41,6 @@
         ...fields
       };
 
-      console.log(payment);
       recordPayment(payment);
 
       fields = { id: "", item: "", price: "", refund: false };
