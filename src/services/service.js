@@ -48,7 +48,6 @@ export const recordPayment = (payment) => {
           let current = { ...booth };
           current.income = res.updatedIncome;
           current.history = res.updatedHistory;
-          console.log(current);
           return current;
         });
       }
