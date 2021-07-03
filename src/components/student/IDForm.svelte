@@ -1,11 +1,11 @@
 <script>
   import Button from "../shared/Button.svelte";
-  import { storeStudentData } from "../../services/service";
+  import { fetchStudentData } from "../../services/service";
 
   let id;
   const submitHandler = () => {
     if (id) {
-      storeStudentData(id);
+      fetchStudentData(id);
       id = "";
     }
   };

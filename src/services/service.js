@@ -1,7 +1,7 @@
 import { boothStore } from '../stores/data';
 import { studentStore } from '../stores/data';
 
-const BACKEND_URL = 'https://api.minsapay.com';
+const BACKEND_URL = 'https://api.minsapay.ml'
 
 export const getBoothData = (id, password) => {
   // fetch the booth information from database
@@ -54,7 +54,7 @@ export const recordPayment = (payment) => {
     });
 };
 
-export const storeStudentData = (id) => {
+export const fetchStudentData = (id) => {
   fetch(BACKEND_URL + '/student/' + id)
     .then((res) => {
       if (res.status === 200) {

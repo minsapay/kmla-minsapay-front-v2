@@ -1,5 +1,5 @@
 {
-  "name": "minsapay",
+  "name": "minsapay-frontend",
   "version": "0.2.0",
   "scripts": {
     "build": "rollup -c",
